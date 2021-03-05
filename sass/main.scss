@@ -1,0 +1,264 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: roboto, sans-serif;
+    font-size: 1em;
+}
+
+@media only screen and (max-width: 375px){
+    /*page principal*/
+header{
+    h1{
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-family: Shrikhand, sans-serif;
+    font-size: 2em;
+    text-align: center;
+    box-shadow: 0 5px 10px lightgrey;
+}
+.location{
+    background-color: rgb(234, 234, 234);
+    height: 50px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    i{
+        margin-right: 5px;
+    }
+}
+}
+
+nav{
+    background-color: rgb(246, 246, 246);
+    h2{
+        text-align: center;
+        font-size: 1.5em;
+        padding-top: 40px;
+        margin-bottom: 20px;
+    }
+    p{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    div{
+        display: flex;
+        justify-content: space-around;
+        padding-bottom: 55px;
+    }
+    a{
+        background: linear-gradient(to top,#9356DC, 20%, #FF79DA,);
+        color: white;
+        text-decoration: none;
+        border-radius: 25px;
+        padding: 15px;
+    }
+}
+
+section{
+    h2{
+        font-size: 1.5em;
+        margin: 50px 0px 50px 20px;
+    }
+    div{
+        display: flex;
+        justify-content: space-around;
+        width: 320px;
+        height: 75px;
+        margin-left: 20px;
+        margin-bottom: 25px;
+    }
+    a{
+        position: relative;
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+        background-color: rgb(246, 246, 246);
+        padding: 30px 50px;
+        border-radius: 25px;
+        width: 320px;
+        height: 75px;
+        box-shadow: 0 5px 10px lightgrey;
+        span{
+            position: relative;
+            right: 60px;
+            color: white;
+            background-color: #9356DC;
+            border-radius: 20px;
+            padding: 5px 10px;
+        }
+        i{
+            position: absolute;
+            left: 40px;
+            color: rgb(126, 126, 126);
+        }
+    }
+}
+
+.restaurant{
+    background-color: rgb(246, 246, 246);
+    padding-bottom: 60px;
+    h2{
+        font-size: 1.5em;
+        padding-top: 40px;
+        margin: 50px 0px 50px 20px;
+    }
+    .new{
+        position: absolute;
+        background-color: rgb(153, 226, 208);
+        color: rgb(0, 135, 102);
+        text-align: center;
+        padding-top: 5px;
+        width: 80px;
+        height: 30px;
+        border-radius: 4px;
+        top: 15px;
+        right: 15px;
+    }
+    &-fiche{
+        position: relative;
+        width: 335px;
+        height: 255px;
+        margin-bottom: 10px;
+        margin-left: 20px;
+        border-radius: 20px;
+        box-shadow: 0 5px 10px lightgrey; 
+        a{
+            text-decoration: none;
+            color: black;
+            width: 335px;
+            height: 255px;
+            img{
+                width: 335px;
+                height: 175px;
+                border-top-right-radius: 20px;
+                border-top-left-radius: 20px;
+                object-fit: cover;
+            }
+            i{
+                font-size: 1.8em;
+            }
+            .fiche-name{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin: 15px 15px;
+                line-height: 25px;
+            }
+        }
+    }
+}
+
+footer{
+    background-color: rgb(53, 53, 53);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    line-height: 40px;
+    h2{
+        font-family: Shrikhand, sans-serif;
+        padding: 30px 0px;
+        font-weight: normal;
+    }
+    a i{
+        margin-right: 10px;
+    }
+    .fa-utensils{
+        padding-right: 7px;
+    }
+}
+
+/*page restaurant*/
+
+.header-restaurant{
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 65px;
+    .logo{
+        width: 50%;
+        position: absolute;
+        left: 25%;
+    }
+    i{
+        margin-left: 20px;
+        font-size: 1.2em;
+        color: black;
+    }
+}
+
+.menu-image{
+    max-width: 100%;
+    position: absolute;
+    z-index: -1;
+}
+
+.menu{
+    background-color: rgb(246, 246, 246);
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    margin-top: 200px;
+    padding-bottom: 60px;
+    &-nom{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 1.8em;
+        h1{
+            font-family: Shrikhand, sans-serif;
+            font-weight: normal;
+            margin-top: 40px;
+        }
+        i{
+            margin-top: 40px;
+        }
+    }
+    h2{
+        margin-left: 10px;
+        font-weight: lighter;
+        position: relative;
+        margin-top: 30px;
+        margin-bottom: 25px;
+        &::after{
+            content: "_____";
+            position: absolute;
+            top: 8px;
+            left: 0px;
+            font-weight: bold;
+            color: rgb(153, 226, 208);
+        }
+    }
+    &-fiche{
+        background-color: rgb(255, 255, 255);
+        width: 350px;
+        height: 70px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-bottom: 15px;
+        border-radius: 20px;
+        box-shadow: 0 5px 10px lightgrey;
+        line-height: 25px;
+    }
+    &-prix{
+        margin-top: 20px;
+        font-weight: bold;
+    }
+    &-command{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 45px;
+    }
+    a{
+        background: linear-gradient(to top,#9356DC, 20%, #FF79DA,);
+        color: white;
+        text-decoration: none;
+        border-radius: 25px;
+        padding: 15px;
+    }
+}
+
+}
