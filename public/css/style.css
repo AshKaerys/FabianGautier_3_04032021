@@ -53,6 +53,10 @@ nav a {
   padding: 15px;
 }
 
+section {
+  display: flex;
+  flex-direction: column;
+}
 section h2 {
   font-size: 1.5em;
   margin: 50px 0px 50px 20px;
@@ -60,26 +64,28 @@ section h2 {
 section div {
   display: flex;
   justify-content: space-around;
-  width: 320px;
   height: 75px;
-  margin-left: 20px;
   margin-bottom: 25px;
 }
 section a {
+  display: flex;
+  align-items: center;
   position: relative;
   text-decoration: none;
   color: black;
   font-weight: bold;
   background-color: #f6f6f6;
-  padding: 30px 50px;
+  padding-left: 40px;
   border-radius: 25px;
-  width: 320px;
+  width: 100%;
   height: 75px;
+  margin-right: 20px;
+  margin-left: 20px;
   box-shadow: 0 5px 10px lightgrey;
 }
 section a span {
   position: relative;
-  right: 60px;
+  right: 55px;
   color: white;
   background-color: #9356DC;
   border-radius: 20px;
@@ -87,7 +93,7 @@ section a span {
 }
 section a i {
   position: absolute;
-  left: 40px;
+  left: 35px;
   color: #7e7e7e;
 }
 
@@ -114,9 +120,9 @@ section a i {
 }
 .restaurant-fiche {
   position: relative;
-  width: 335px;
   height: 255px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+  margin-right: 20px;
   margin-left: 20px;
   border-radius: 20px;
   box-shadow: 0 5px 10px lightgrey;
@@ -128,7 +134,7 @@ section a i {
   height: 255px;
 }
 .restaurant-fiche a img {
-  width: 335px;
+  width: 100%;
   height: 175px;
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
@@ -141,7 +147,7 @@ section a i {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 15px 15px;
+  padding: 15px 15px;
   line-height: 25px;
 }
 
@@ -228,15 +234,26 @@ footer .fa-utensils {
 }
 .menu-fiche {
   background-color: white;
-  width: 350px;
   height: 70px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  margin-bottom: 15px;
+  /* margin-bottom: 15px; */
   border-radius: 20px;
   box-shadow: 0 5px 10px lightgrey;
   line-height: 25px;
+  margin: 15px 15px;
+  padding: 0px 15px;
+}
+.menu-fiche div {
+  overflow: hidden;
+  padding-right: 20px;
+}
+.menu-fiche div p {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 0.85em;
 }
 .menu-prix {
   margin-top: 20px;
