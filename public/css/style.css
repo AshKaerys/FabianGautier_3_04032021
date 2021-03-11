@@ -172,7 +172,7 @@ footer .fa-utensils {
   padding-right: 7px;
 }
 
-/*page restaurant*/
+/*page menu restaurant*/
 .header-restaurant {
   position: relative;
   display: flex;
@@ -238,7 +238,6 @@ footer .fa-utensils {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* margin-bottom: 15px; */
   border-radius: 20px;
   box-shadow: 0 5px 10px lightgrey;
   line-height: 25px;
@@ -270,6 +269,85 @@ footer .fa-utensils {
   text-decoration: none;
   border-radius: 25px;
   padding: 15px;
+}
+
+/* Responsive tab */
+@media only screen and (min-width: 600px) {
+  section {
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  section h2 {
+    width: 100%;
+  }
+  section div {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+  section a {
+    padding-right: 20px;
+  }
+
+  .restaurant {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .restaurant h2 {
+    width: 100%;
+  }
+  .restaurant-fiche {
+    width: 40%;
+  }
+
+  footer {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-bottom: 40px;
+  }
+  footer h2 {
+    width: 100%;
+    text-align: center;
+  }
+  footer a {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+
+  /* page menu restaurant */
+  .header-restaurant {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .header-restaurant i {
+    font-size: 1.5em;
+  }
+  .header-restaurant .logo {
+    width: 30%;
+    left: 40%;
+  }
+
+  .menu {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .menu-nom {
+    width: 100%;
+  }
+  .menu h2 {
+    width: 100%;
+  }
+  .menu-fiche {
+    width: 30%;
+    margin: 15px 10px;
+    height: auto;
+  }
+  .menu-command {
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
