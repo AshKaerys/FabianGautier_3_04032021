@@ -167,8 +167,12 @@ footer{
         padding: 30px 0px;
         font-weight: normal;
     }
-    a i{
+    a{
+      color: white;
+      text-decoration: none;  
+        i{
         margin-right: 10px;
+    }
     }
     .fa-utensils{
         padding-right: 7px;
@@ -317,16 +321,17 @@ footer{
             text-align: center;
         }
         a{
+            color: white;
+            text-decoration: none;
             margin-right: 20px;
-            margin-left: 20px;
+            margin-left: 20px; 
+              i{
+              margin-right: 10px;
+          }
         }
     }
 
-<<<<<<< HEAD
 /* page menu restaurant resposive tab*/
-=======
-/* page menu restaurant */
->>>>>>> develop
 
 .header-restaurant{
     margin-top: 20px;
@@ -361,7 +366,6 @@ footer{
 
 }
 
-<<<<<<< HEAD
 /* responsive desktop */
 
 @media only screen and (min-width: 1440px){
@@ -378,10 +382,37 @@ footer{
         }
     }
 
-    /* page menu restaurant resposive tab*/
+    /* page menu restaurant resposive desktop*/
+
+    .header-restaurant{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        i{
+            font-size: 2em;
+        }
+        .logo{
+            width: 25%;
+            left: 40%;
+        }
+    }
+
+    .menu{
+        margin-top: 410px;
+        justify-content: space-between;
+        h2{
+            margin-top: 50px;
+        }
+        &-nom{
+            font-size: 2.5em;
+            justify-content: space-between;
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+        &-fiche{
+            height: 100px;
+        }
+    }
 
 
 }
 
-=======
->>>>>>> develop
