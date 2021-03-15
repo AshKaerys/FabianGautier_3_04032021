@@ -322,7 +322,7 @@ footer{
         }
     }
 
-/* page menu restaurant */
+/* page menu restaurant resposive tab*/
 
 .header-restaurant{
     margin-top: 20px;
@@ -354,6 +354,27 @@ footer{
         width: 100%;
     }
 }
+
+}
+
+/* responsive desktop */
+
+@media only screen and (min-width: 1440px){
+    section{
+        flex-direction: row;
+        margin-bottom: 100px;
+    }
+
+    .restaurant{
+        &-fiche{
+            width: 45%;
+            height: 300px;
+            margin-bottom: 40px;
+        }
+    }
+
+    /* page menu restaurant resposive tab*/
+
 
 }
 
