@@ -36,6 +36,8 @@ nav{
         text-align: center;
         font-size: 1.5em;
         padding-top: 40px;
+        padding-left: 20px;
+        padding-right: 20px;
         margin-bottom: 20px;
     }
     p{
@@ -199,16 +201,18 @@ footer{
 }
 
 .menu-image{
-    max-width: 100%;
+    width: 100%;
+    height: 100%;
     position: absolute;
     z-index: -1;
+    object-fit: cover;
 }
 
 .menu{
     background-color: rgb(246, 246, 246);
-    border-top-right-radius: 20px;
-    border-top-left-radius: 20px;
-    margin-top: 200px;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    margin-top: 320px;
     padding-bottom: 60px;
     &-nom{
         display: flex;
@@ -225,18 +229,19 @@ footer{
         }
     }
     h2{
-        margin-left: 10px;
+        margin-left: 20px;
         font-weight: lighter;
         position: relative;
         margin-top: 30px;
         margin-bottom: 25px;
         &::after{
-            content: "_____";
+            content: "";
             position: absolute;
-            top: 8px;
+            width: 40px;
+            height: 3px;
+            top: 22px;
             left: 0px;
-            font-weight: bold;
-            color: rgb(153, 226, 208);
+            background-color: rgb(153, 226, 208);
         }
     }
     &-fiche{
@@ -250,6 +255,16 @@ footer{
         line-height: 25px;
         margin: 15px 15px;
         padding: 0px 15px;
+        a{
+            text-decoration: none;
+            color: black;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            line-height: 25px;
+        }
         div{
         overflow: hidden;
         padding-right: 20px;
@@ -270,12 +285,12 @@ footer{
         justify-content: space-around;
         margin-top: 45px;
     }
-    a{
+    &-button{
         background: linear-gradient(to top,#9356DC, 20%, #FF79DA,);
         color: white;
         text-decoration: none;
         border-radius: 25px;
-        padding: 15px;
+        padding: 15px 40px;
     }
 }
 
@@ -288,6 +303,7 @@ footer{
         justify-content: space-around;
         h2{
             width: 100%;
+            text-align: center;
         }
         div{
             margin-right: 20px;
@@ -304,6 +320,7 @@ footer{
         justify-content: space-around;
         h2{
             width: 100%;
+            margin-left: 50px;
         }
         &-fiche{
             width: 40%;
@@ -350,14 +367,16 @@ footer{
     flex-wrap: wrap;
     &-nom{
         width: 100%;
+        justify-content: space-between;
+        margin: 0 20px;
     }
     h2{
         width: 100%;
     }
     &-fiche{
         width: 30%;
+        height: 100px;
         margin: 15px 10px;
-        height: auto;
     }
     &-command{
         width: 100%;
@@ -397,8 +416,8 @@ footer{
     }
 
     .menu{
-        margin-top: 410px;
-        justify-content: space-between;
+        margin-top: 600px;
+        justify-content: space-around;
         h2{
             margin-top: 50px;
         }
