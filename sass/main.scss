@@ -14,6 +14,7 @@
     justify-content: space-around;
     position: fixed;
     z-index: 1;
+    opacity: 0.8;
     width: 100%;
     height: 100%;
     background-color: white;
@@ -25,6 +26,8 @@
         justify-content: space-around;
         align-items: center;
         position: fixed;
+        background-color: blue;
+        opacity: 1;
         width: 320px;
         height: 320px;
         border: 5px solid #99E2D0;
