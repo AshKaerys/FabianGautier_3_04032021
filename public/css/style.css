@@ -15,7 +15,7 @@
   z-index: 1;
   width: 100%;
   height: 100%;
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(255, 255, 255, 0.8);
   animation: loading 1s linear;
   animation-fill-mode: forwards;
 }
@@ -146,7 +146,7 @@ section {
 }
 section h2 {
   font-size: 1.5em;
-  margin: 50px 0px 50px 20px;
+  margin: 50px 0px 50px 25px;
 }
 section div {
   display: flex;
@@ -167,7 +167,7 @@ section a {
   width: 100%;
   height: 75px;
   margin-right: 20px;
-  margin-left: 20px;
+  margin-left: 30px;
   box-shadow: 0 5px 10px lightgrey;
 }
 section a span {
@@ -283,7 +283,7 @@ footer .fa-utensils {
 
 .menu-image {
   width: 100%;
-  height: 100%;
+  height: 70%;
   position: absolute;
   z-index: -1;
   object-fit: cover;
@@ -458,7 +458,7 @@ footer .fa-utensils {
     width: 100%;
   }
   .menu-fiche {
-    width: 30%;
+    width: 100%;
     height: 100px;
     margin: 15px 10px;
   }
@@ -506,6 +506,7 @@ footer .fa-utensils {
     margin-right: 50px;
   }
   .menu-fiche {
+    width: 30%;
     height: 100px;
   }
 }
