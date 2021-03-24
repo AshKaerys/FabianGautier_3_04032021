@@ -251,6 +251,33 @@ section{
                 line-height: 25px;
             }
         }
+        .coeur{
+            position: relative;
+            cursor: default;
+            transition : all 1s linear;
+            &-vide{
+                i{
+                font-weight: normal;
+                }
+            }
+            &-plein{
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 0;
+                background: linear-gradient(to top,#9356DC, 20%, #FF79DA,);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                i{
+                font-weight: bold;
+                font-size: 1.85em;
+                }
+                &:hover{
+                    transition : all 1s ease-in-out;
+                    height: 40px;
+                    }
+            }
+        }
     }
 }
 

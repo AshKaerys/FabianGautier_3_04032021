@@ -249,6 +249,31 @@ section a i {
   padding: 15px 15px;
   line-height: 25px;
 }
+.restaurant-fiche .coeur {
+  position: relative;
+  cursor: default;
+  transition: all 1s linear;
+}
+.restaurant-fiche .coeur-vide i {
+  font-weight: normal;
+}
+.restaurant-fiche .coeur-plein {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 0;
+  background: linear-gradient(to top, #9356DC, 20%, #FF79DA);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.restaurant-fiche .coeur-plein i {
+  font-weight: bold;
+  font-size: 1.85em;
+}
+.restaurant-fiche .coeur-plein:hover {
+  transition: all 1s ease-in-out;
+  height: 40px;
+}
 
 footer {
   background-color: #353535;
