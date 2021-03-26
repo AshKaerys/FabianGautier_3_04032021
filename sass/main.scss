@@ -252,31 +252,26 @@ section{
             }
         }
         .coeur{
-            position: relative;
-            cursor: default;
-            transition : all 1s linear;
             &-vide{
-                i{
-                font-weight: normal;
+                position:relative;
+                &:hover{
+                    color: #9356DC;
+                    .coeur-plein{
+                        transform: scale(1);
+                        opacity: 1;                    
+                    }              
                 }
             }
             &-plein{
-                position: absolute;
-                top: 0;
-                left: 0;
-                height: 0;
-                background: linear-gradient(to top,#9356DC, 20%, #FF79DA,);
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
-                i{
-                font-weight: bold;
-                font-size: 1.85em;
-                }
-                &:hover{
-                    transition : all 1s ease-in-out;
-                    height: 40px;
-                    }
-            }
+                position:absolute;
+                font-size: 1em;
+                left:0;
+                top:0;
+                color: #9356DC;
+                opacity:0;
+                transform: scale(0);
+                transition: 0.5s ease-in-out;
+            }           
         }
     }
 }
@@ -351,6 +346,28 @@ footer{
         }
         i{
             margin-top: 40px;
+        }
+        .coeur{
+            &-vide{
+                position:relative;
+                &:hover{
+                    color: #9356DC;
+                    .coeur-plein{
+                        transform: scale(1);
+                        opacity: 1;                    
+                    }              
+                }
+            }
+            &-plein{
+                position:absolute;
+                font-size: 1em;
+                left: 0;
+                top: -40px;
+                color: #9356DC;
+                opacity: 0;
+                transform: scale(0);
+                transition: 1s ease-in-out;
+            }           
         }
     }
     h2{

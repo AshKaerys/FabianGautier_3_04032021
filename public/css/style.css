@@ -249,30 +249,25 @@ section a i {
   padding: 15px 15px;
   line-height: 25px;
 }
-.restaurant-fiche .coeur {
+.restaurant-fiche .coeur-vide {
   position: relative;
-  cursor: default;
-  transition: all 1s linear;
 }
-.restaurant-fiche .coeur-vide i {
-  font-weight: normal;
+.restaurant-fiche .coeur-vide:hover {
+  color: #9356DC;
+}
+.restaurant-fiche .coeur-vide:hover .coeur-plein {
+  transform: scale(1);
+  opacity: 1;
 }
 .restaurant-fiche .coeur-plein {
   position: absolute;
-  top: 0;
+  font-size: 1em;
   left: 0;
-  height: 0;
-  background: linear-gradient(to top, #9356DC, 20%, #FF79DA);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.restaurant-fiche .coeur-plein i {
-  font-weight: bold;
-  font-size: 1.85em;
-}
-.restaurant-fiche .coeur-plein:hover {
-  transition: all 1s ease-in-out;
-  height: 40px;
+  top: 0;
+  color: #9356DC;
+  opacity: 0;
+  transform: scale(0);
+  transition: 0.5s ease-in-out;
 }
 
 footer {
@@ -346,6 +341,26 @@ footer .fa-utensils {
 }
 .menu-nom i {
   margin-top: 40px;
+}
+.menu-nom .coeur-vide {
+  position: relative;
+}
+.menu-nom .coeur-vide:hover {
+  color: #9356DC;
+}
+.menu-nom .coeur-vide:hover .coeur-plein {
+  transform: scale(1);
+  opacity: 1;
+}
+.menu-nom .coeur-plein {
+  position: absolute;
+  font-size: 1em;
+  left: 0;
+  top: -40px;
+  color: #9356DC;
+  opacity: 0;
+  transform: scale(0);
+  transition: 1s ease-in-out;
 }
 .menu h2 {
   margin-left: 20px;
