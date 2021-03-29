@@ -120,8 +120,8 @@ nav h2 {
   text-align: center;
   font-size: 1.5em;
   padding-top: 40px;
-  padding-left: 20px;
-  padding-right: 20px;
+  margin-left: 40px;
+  margin-right: 40px;
   margin-bottom: 20px;
 }
 nav p {
@@ -281,7 +281,7 @@ footer {
 }
 footer h2 {
   font-family: Shrikhand, sans-serif;
-  padding: 30px 0px;
+  padding: 25px 0px;
   font-weight: normal;
 }
 footer a {
@@ -389,6 +389,7 @@ footer .fa-utensils {
   line-height: 25px;
   margin: 15px 15px;
   padding: 0px 15px;
+  animation: slide 1s ease-out;
 }
 .menu-fiche a {
   text-decoration: none;
@@ -426,7 +427,27 @@ footer .fa-utensils {
   border-radius: 25px;
   padding: 15px 40px;
 }
+.menu-button:hover {
+  opacity: 0.8;
+  box-shadow: 0 5px 10px grey;
+}
+.menu .menu-plat {
+  animation: slide 1s 0.5s ease-out both;
+}
+.menu .menu-dessert {
+  animation: slide 1s 1s ease-out both;
+}
 
+@keyframes slide {
+  0% {
+    margin-right: 375px;
+    margin-left: -375px;
+  }
+  100% {
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+}
 /* Responsive tab */
 @media only screen and (min-width: 600px) {
   section {
@@ -546,7 +567,7 @@ footer .fa-utensils {
 
   .menu {
     margin-top: 600px;
-    justify-content: space-around;
+    justify-content: space-between;
   }
   .menu h2 {
     margin-top: 50px;
