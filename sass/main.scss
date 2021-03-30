@@ -396,8 +396,13 @@ footer{
         box-shadow: 0 5px 10px lightgrey;
         line-height: 25px;
         margin: 15px 15px;
-        padding: 0px 15px;
+        padding-left: 15px;
         animation: slide 1s ease-out;
+        overflow: hidden;
+        &:hover .menu-check{
+            width: 60px;
+            transition: all 0.3s linear;
+        }
         a{
             text-decoration: none;
             color: black;
@@ -407,10 +412,14 @@ footer{
             justify-content: space-between;
             align-items: center;
             line-height: 25px;
+
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow:ellipsis;
+
         }
         div{
         overflow: hidden;
-        padding-right: 20px;
             p{
             overflow: hidden;
             white-space: nowrap;
@@ -422,7 +431,26 @@ footer{
     &-prix{
         margin-top: 20px;
         font-weight: bold;
+        padding-right: 15px;
     }
+    &-check{
+        position: relative;
+        width: 0px;
+        height: 100%;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        background-color: #99E2D0;
+        padding: 0;
+        transition: all 0.3s linear;
+        i{
+            position: absolute;
+            color: white;
+            font-size: 1.5em;
+            top: 30%;
+            left: 25%;
+        }
+    }
+
     &-command{
         display: flex;
         justify-content: space-around;
@@ -452,10 +480,12 @@ footer{
 @keyframes slide{
     0% {margin-right: 375px;
         margin-left: -375px;
+        opacity: 0;
 
     }
-    100% {margin-right: 0px;
-        margin-left: 0px;
+    100% {margin-right: 15px;
+        margin-left: 15px;
+        opacity: 1;
 
     }
 }
