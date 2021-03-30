@@ -402,6 +402,9 @@ footer{
         &:hover .menu-check{
             width: 60px;
             transition: all 0.3s linear;
+            i{
+                animation: rotates 0.5s linear both;
+            }
         }
         a{
             text-decoration: none;
@@ -487,6 +490,13 @@ footer{
         margin-left: 15px;
         opacity: 1;
 
+    }
+}
+
+@keyframes rotates{
+    0%{transform: rotate(0deg);
+    }
+    100%{transform: rotate(360deg);
     }
 }
 

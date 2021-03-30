@@ -396,6 +396,9 @@ footer .fa-utensils {
   width: 60px;
   transition: all 0.3s linear;
 }
+.menu-fiche:hover .menu-check i {
+  animation: rotates 0.5s linear both;
+}
 .menu-fiche a {
   text-decoration: none;
   color: black;
@@ -473,6 +476,14 @@ footer .fa-utensils {
     margin-right: 15px;
     margin-left: 15px;
     opacity: 1;
+  }
+}
+@keyframes rotates {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }
 /* Responsive tab */
