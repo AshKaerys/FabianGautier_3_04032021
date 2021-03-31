@@ -253,7 +253,9 @@ section a i {
   position: relative;
 }
 .restaurant-fiche .coeur-vide:hover {
-  color: #9356DC;
+  background: linear-gradient(#FF79DA, #9356DC);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .restaurant-fiche .coeur-vide:hover .coeur-plein {
   transform: scale(1);
@@ -264,7 +266,9 @@ section a i {
   font-size: 1em;
   left: 0;
   top: 0;
-  color: #9356DC;
+  background: linear-gradient(#FF79DA, #9356DC);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   opacity: 0;
   transform: scale(0);
   transition: 0.5s ease-in-out;
@@ -346,7 +350,9 @@ footer .fa-utensils {
   position: relative;
 }
 .menu-nom .coeur-vide:hover {
-  color: #9356DC;
+  background: linear-gradient(#FF79DA, #9356DC);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .menu-nom .coeur-vide:hover .coeur-plein {
   transform: scale(1);
@@ -357,7 +363,9 @@ footer .fa-utensils {
   font-size: 1em;
   left: 0;
   top: -40px;
-  color: #9356DC;
+  background: linear-gradient(#FF79DA, #9356DC);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   opacity: 0;
   transform: scale(0);
   transition: 1s ease-in-out;
@@ -414,6 +422,11 @@ footer .fa-utensils {
 }
 .menu-fiche div {
   overflow: hidden;
+}
+.menu-fiche div h3 {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .menu-fiche div p {
   overflow: hidden;
@@ -584,6 +597,10 @@ footer .fa-utensils {
     margin-bottom: 100px;
   }
 
+  .restaurant {
+    padding-left: 120px;
+    padding-right: 120px;
+  }
   .restaurant-fiche {
     width: 45%;
     height: 300px;
@@ -606,9 +623,17 @@ footer .fa-utensils {
   .menu {
     margin-top: 600px;
     justify-content: space-between;
+    width: 1440px;
+    margin: 0 auto;
+    margin-top: 200px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
   .menu h2 {
     margin-top: 50px;
+  }
+  .menu-image {
+    height: 97%;
   }
   .menu-nom {
     font-size: 2.5em;

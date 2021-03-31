@@ -255,7 +255,9 @@ section{
             &-vide{
                 position:relative;
                 &:hover{
-                    color: #9356DC;
+                    background: linear-gradient(#FF79DA, #9356DC);
+                    -webkit-background-clip: text;
+	                -webkit-text-fill-color: transparent;
                     .coeur-plein{
                         transform: scale(1);
                         opacity: 1;                    
@@ -267,7 +269,9 @@ section{
                 font-size: 1em;
                 left:0;
                 top:0;
-                color: #9356DC;
+                background: linear-gradient(#FF79DA, #9356DC);
+                -webkit-background-clip: text;
+	            -webkit-text-fill-color: transparent;
                 opacity:0;
                 transform: scale(0);
                 transition: 0.5s ease-in-out;
@@ -351,7 +355,9 @@ footer{
             &-vide{
                 position:relative;
                 &:hover{
-                    color: #9356DC;
+                    background: linear-gradient(#FF79DA, #9356DC);
+                    -webkit-background-clip: text;
+	                -webkit-text-fill-color: transparent;
                     .coeur-plein{
                         transform: scale(1);
                         opacity: 1;                    
@@ -363,7 +369,9 @@ footer{
                 font-size: 1em;
                 left: 0;
                 top: -40px;
-                color: #9356DC;
+                background: linear-gradient(#FF79DA, #9356DC);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
                 opacity: 0;
                 transform: scale(0);
                 transition: 1s ease-in-out;
@@ -423,6 +431,11 @@ footer{
         }
         div{
         overflow: hidden;
+            h3{
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow:ellipsis;
+            }
             p{
             overflow: hidden;
             white-space: nowrap;
@@ -604,6 +617,8 @@ body{
     }
 
     .restaurant{
+        padding-left: 120px;
+        padding-right: 120px;
         &-fiche{
             width: 45%;
             height: 300px;
@@ -628,8 +643,17 @@ body{
     .menu{
         margin-top: 600px;
         justify-content: space-between;
+
+        width: 1440px;
+        margin: 0 auto;
+        margin-top: 200px;
+        padding-left: 20px;
+        padding-right: 20px;
         h2{
             margin-top: 50px;
+        }
+        &-image{
+            height: 97%;
         }
         &-nom{
             font-size: 2.5em;
