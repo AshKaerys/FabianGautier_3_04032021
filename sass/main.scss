@@ -6,7 +6,7 @@
     font-size: 1em;
 }
 
-/* Loader */
+/* Animation Loader */
 
 .preloader{
     display: flex;
@@ -97,7 +97,7 @@
     /*page principal*/
 header{
     h1{
-    margin-top: 10px;
+    padding-top: 10px;
     margin-bottom: 5px;
     font-family: Shrikhand, sans-serif;
     font-size: 2em;
@@ -180,6 +180,8 @@ section{
         box-shadow: 0 5px 10px lightgrey;
         &:hover{
             background-color: rgb(247, 237, 255);
+            box-shadow: 0 5px 10px grey;
+
             i{
             color: #9356DC;
             }
@@ -251,6 +253,8 @@ section{
                 line-height: 25px;
             }
         }
+        /* Animation coeurs */
+
         .coeur{
             &-vide{
                 position:relative;
@@ -492,6 +496,8 @@ footer{
         animation: slide 1s 1s ease-out both;
     }
 }
+
+/* Animation arrivée des menus */
 
 @keyframes slide{
     0% {margin-right: 375px;
